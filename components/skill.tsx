@@ -3,6 +3,7 @@ import { itemSkills } from '@/constant';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { motion } from 'framer-motion';
 import { Separator } from './ui/separator';
+import Image from 'next/image';
 
 const Skill = () => {
 	return (
@@ -18,13 +19,10 @@ const Skill = () => {
 			<p className='my-10 max-w-[85%] w-full mx-auto leading-normal text-muted-foreground sm:text-lg sm:leading-7 text-center'>{`I'm a skilled web developer fluent in JavaScript, specializing in Next.js and React.js frameworks. I excel at utilizing Prisma ORM and Node.js to build efficient, dynamic web applications.`}</p>
 			<div className='grid sm:grid-cols-2 md:grid-cols-3 w-full gap-4 pb-10'>
 				{itemSkills.map((item) => (
-					<Card
-						key={item.title}
-						className='group hover:bg-primary hover:text-white transition cursor-pointer'
-					>
+					<Card key={item.title}>
 						<CardHeader>
 							<CardTitle>{item.icon}</CardTitle>
-							<CardDescription className='group-hover:text-zinc-100'>{item.title}</CardDescription>
+							<CardDescription>{item.title}</CardDescription>
 						</CardHeader>
 						<CardContent>
 							<p>{item.desc}</p>

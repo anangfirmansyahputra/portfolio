@@ -22,18 +22,25 @@ const Project = () => {
 			<Separator />
 			<div className='mt-10 w-full gap-5 grid grid-cols-1 md:grid-cols-3 pb-10'>
 				{myProjects.map((item) => (
-					<Card
+					<div
 						key={item.name}
-						className='border-secondary hover:ring-1 ring-primary transition'
+						// className='hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 rounded-lg p-[1px] transition'
 					>
-						<CardHeader>
-							<CardTitle>{item.name}</CardTitle>
-							<CardDescription>This is a clone from Thread app who created by Meta. So you can can do </CardDescription>
-						</CardHeader>
-						<CardFooter>
-							<Button className='w-full'>Demo</Button>
-						</CardFooter>
-					</Card>
+						<Card className='h-full flex flex-col justify-between'>
+							<CardHeader>
+								<CardTitle>{item.name}</CardTitle>
+								<CardDescription>{item.description}</CardDescription>
+							</CardHeader>
+							<CardFooter>
+								<Button
+									className='w-full'
+									variant='premium'
+								>
+									Demo
+								</Button>
+							</CardFooter>
+						</Card>
+					</div>
 				))}
 			</div>
 		</motion.section>

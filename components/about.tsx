@@ -6,6 +6,8 @@ import Container from './ui/container';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion';
 import { motion } from 'framer-motion';
 import { Separator } from './ui/separator';
+import { Button } from './ui/button';
+import { Download } from 'lucide-react';
 
 // bg-slate-50 dark:bg-transparent
 const About = () => {
@@ -39,7 +41,11 @@ const About = () => {
 							))}
 						</Accordion>
 					</div>
-					<div className='flex-1'></div>
+					<div className='flex-1'>
+						<Button variant='premium'>
+							Download CV <Download className='w-4 h-4 ml-2' />
+						</Button>
+					</div>
 				</div>
 				{/* <p className='max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7 text-center'>{`I'm a skilled web developer fluent in JavaScript, specializing in Next.js and React.js frameworks. I excel at utilizing Prisma ORM and Node.js to build efficient, dynamic web applications.`}</p>
 				<div className='grid sm:grid-cols-2 md:grid-cols-3 w-full gap-4'>

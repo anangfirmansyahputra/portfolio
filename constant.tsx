@@ -1,7 +1,7 @@
 export const itemSkills = [
 	{
 		title: 'Next.js 13',
-		desc: 'App dir, Routing, Layouts, Loading UI and API routes.',
+		desc: 'Next.js: Versatile Framework for Modern Web App Development and More.',
 		icon: (
 			<svg
 				viewBox='0 0 24 24'
@@ -15,7 +15,7 @@ export const itemSkills = [
 	},
 	{
 		title: 'React js',
-		desc: 'Server and Client Components. Use hook.',
+		desc: 'React.js: JavaScript Library for Building User Interfaces.',
 		icon: (
 			<svg
 				viewBox='0 0 24 24'
@@ -29,7 +29,7 @@ export const itemSkills = [
 	},
 	{
 		title: 'Tailwind',
-		desc: 'UI components built using Radix UI and styled with Tailwind CSS.',
+		desc: 'Tailwind CSS: Utility-First CSS Framework for Rapid Web Development.',
 		icon: (
 			<svg
 				viewBox='0 0 24 24'
@@ -43,7 +43,7 @@ export const itemSkills = [
 	},
 	{
 		title: 'Node js',
-		desc: 'UI components built using Radix UI and styled with Tailwind CSS.',
+		desc: 'Node.js: JavaScript Runtime for Server-Side Applications and APIs',
 		icon: (
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
@@ -60,7 +60,7 @@ export const itemSkills = [
 	},
 	{
 		title: 'Prisma',
-		desc: 'UI components built using Radix UI and styled with Tailwind CSS.',
+		desc: 'Prisma: Modern Database Toolkit for Node.js and TypeScript Developers.',
 		icon: (
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
@@ -83,8 +83,8 @@ export const itemSkills = [
 		),
 	},
 	{
-		title: 'Prisma',
-		desc: 'UI components built using Radix UI and styled with Tailwind CSS.',
+		title: 'MySQL',
+		desc: 'MySQL: Popular Open-Source Relational Database Management System (RDBMS)',
 		icon: (
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
@@ -116,7 +116,7 @@ export const itemSkills = [
 	},
 	{
 		title: 'MongoDB',
-		desc: 'UI components built using Radix UI and styled with Tailwind CSS.',
+		desc: 'MongoDB: NoSQL Database for Scalable and Flexible Data Storage Solutions.',
 		icon: (
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
@@ -203,22 +203,22 @@ export const accordionItem = [
 export const myProjects = [
 	{
 		name: 'Threads',
-		description: 'test',
+		description: 'This is threads clone, so you can interact with people or communities',
 		url: '/',
 	},
 	{
 		name: 'Nusa Store',
-		description: 'test',
+		description: 'This is a store that connect with my CMS Web, so this store content will follow what we controll in Admin or CMS Web',
 		url: '/',
 	},
 	{
 		name: 'Genius',
-		description: 'test',
+		description: 'Genius is SAAS app for generate a picture, video, music, code, and conversation that you can explore that without add the credit card for generating',
 		url: '/',
 	},
 	{
 		name: 'Discord Clone',
-		description: 'test',
+		description: 'This is a discord clone, so we can do some interaction same with the real discord!.',
 		url: '/',
 	},
 ];

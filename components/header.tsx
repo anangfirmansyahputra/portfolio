@@ -29,7 +29,7 @@ const Header = () => {
 					<div className='flex items-center gap-6 md:gap-10'>
 						<div className='flex items-center sm:items-start overflow-hidden'>
 							<h1 className='font-bold text-3xl sm:inline-block hidden cursor-pointer'>
-								A <span className='text-primary'>F</span>
+								A <span className='text-indigo-500'>F</span>
 							</h1>
 							<Button
 								className='sm:hidden'
@@ -50,7 +50,11 @@ const Header = () => {
 															<SheetClose asChild>
 																<Link
 																	href={item.url}
-																	className='text-muted-foreground transition-colors hover:text-primary font-normal'
+																	className='text-muted-foreground transition-colors font-medium hover:bg-gradient-to-r 
+																	hover:from-indigo-500 
+																	hover:via-purple-500 
+																	hover:to-pink-500 
+																	hover:text-transparent bg-clip-text animate-gradient'
 																>
 																	{item.label}
 																</Link>
@@ -71,7 +75,11 @@ const Header = () => {
 								<li key={item.id}>
 									<Link
 										href={item.url}
-										className='text-muted-foreground transition-colors hover:text-primary font-normal'
+										className='
+										font-medium
+										text-muted-foreground transition-colors  hover:bg-gradient-to-br hover:from-indigo-500 hover:via-purple-500 to-pink-500 hover:text-transparent hover:bg-clip-text animate-gradient
+										
+										'
 									>
 										{item.label}
 									</Link>

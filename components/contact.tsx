@@ -16,7 +16,7 @@ const Contact = () => {
 				<Card className='flex-1'>
 					<CardHeader>
 						<CardTitle>Let’s discuss your project</CardTitle>
-						<CardDescription>Please contact me if you want to discuse or something like that</CardDescription>
+						<CardDescription>Please contact me if you want to discuss or want to talk another thing</CardDescription>
 					</CardHeader>
 					<CardContent>
 						<div className='flex'>
@@ -25,7 +25,7 @@ const Contact = () => {
 								<Input placeholder='Your email' />
 								<Input placeholder='Subject' />
 								<Textarea placeholder='Message' />
-								<Button>Submit</Button>
+								<Button variant='premium'>Submit</Button>
 							</div>
 						</div>
 					</CardContent>
