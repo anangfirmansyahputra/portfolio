@@ -1,15 +1,18 @@
 'use client';
 
-import Link from 'next/link';
+import { myProjects } from '@/constant';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { Button } from './ui/button';
 import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from './ui/card';
-import { motion } from 'framer-motion';
 import { Separator } from './ui/separator';
-import { myProjects } from '@/constant';
-import { redirect } from 'next/navigation';
-import { useEffect, useState } from 'react';
 
 const Project = () => {
+	const openInNewTab = (url: string) => {
+		const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+		if (newWindow) newWindow.opener = null;
+	};
+
 	return (
 		<motion.section
 			initial={{ opacity: 0 }}
@@ -28,11 +31,23 @@ const Project = () => {
 					>
 						<Card className='h-full flex flex-col justify-between'>
 							<CardHeader>
+								{item.image && (
+									<div className='relative aspect-video hover:scale-105 transition'>
+										<Image
+											src={item.image}
+											alt={item.name}
+											priority
+											fill
+											className='object-contain rounded-md'
+										/>
+									</div>
+								)}
 								<CardTitle>{item.name}</CardTitle>
 								<CardDescription>{item.description}</CardDescription>
 							</CardHeader>
 							<CardFooter>
 								<Button
+									onClick={() => openInNewTab(item.url)}
 									className='w-full'
 									variant='premium'
 								>

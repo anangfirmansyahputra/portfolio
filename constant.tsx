@@ -202,23 +202,39 @@ export const accordionItem = [
 
 export const myProjects = [
 	{
-		name: 'Threads',
-		description: 'This is threads clone, so you can interact with people or communities',
-		url: '/',
+		name: 'Nusaadmin',
+		description: 'This is a admin template, I create a admin template v1 for my next apps using vite, so we can use this template for a CMS content',
+		url: 'https://nusaadmin-template-v1-delta.vercel.app/',
+		image: '/assets/admin-templatev1.png',
 	},
 	{
-		name: 'Nusa Store',
-		description: 'This is a store that connect with my CMS Web, so this store content will follow what we controll in Admin or CMS Web',
-		url: '/',
+		name: 'Trippy',
+		description: 'Landing page for a travel companies destination',
+		url: 'https://trippy-diva.netlify.app/',
+		image: '/assets/trippy.png',
+	},
+	{
+		name: 'ProNef',
+		description: 'This is a landing page for intoduce an app called ProNef',
+		url: 'https://pronef-brown.vercel.app/',
+		image: '/assets/pronef.png',
+	},
+	{
+		name: 'Threads',
+		description: 'This is threads clone, so you can interact with people or communities',
+		url: 'https://anang-threads.vercel.app/',
+		image: '/assets/threads.png',
 	},
 	{
 		name: 'Genius',
 		description: 'Genius is SAAS app for generate a picture, video, music, code, and conversation that you can explore that without add the credit card for generating',
-		url: '/',
+		url: 'https://ai-saas-anangfirmansyahputra.vercel.app/',
+		image: '/assets/genius.png',
 	},
 	{
 		name: 'Discord Clone',
 		description: 'This is a discord clone, so we can do some interaction same with the real discord!.',
-		url: '/',
+		image: '/assets/discord-clone.png',
+		url: 'https://github.com/anangfirmansyahputra/discord-clone',
 	},
 ];
