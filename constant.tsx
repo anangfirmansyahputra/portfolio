@@ -237,4 +237,16 @@ export const myProjects = [
 		image: '/assets/discord-clone.png',
 		url: 'https://github.com/anangfirmansyahputra/discord-clone',
 	},
+	{
+		name: 'E-Commerce Admin',
+		description: 'This is a CMS app for my store, i create this apps using Next.JS 13, Prisma, also using Stripe for payment gateway and Clerk as a auth, please free to explore this app',
+		image: '/assets/ecommerce-admin.png',
+		url: 'https://ecommerce-admin-gray-two.vercel.app/',
+	},
+	{
+		name: 'Nusa Store',
+		description: 'This app is connected with my previous app, E-Commerce Admin, so this app will show product, categories, billboard, and create a order also all activities in this app will be record in my E-Commerce Admin.',
+		image: '/assets/admin-store.png',
+		url: 'https://ecommerce-store-ten-mocha.vercel.app/',
+	},
 ];

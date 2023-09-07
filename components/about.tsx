@@ -47,6 +47,16 @@ const About = () => {
 									<AccordionContent className='text-muted-foreground'>{item.desc}</AccordionContent>
 								</AccordionItem>
 							))}
+							{/* <AccordionItem
+								value={"item-4"}
+							>
+								<AccordionTrigger>My Certificate</AccordionTrigger>
+									<AccordionContent className='text-muted-foreground'>
+										<ul>
+											<li></li>
+										</ul>
+								</AccordionContent>
+							</AccordionItem> */}
 						</Accordion>
 					</div>
 					<div className='flex-1'>
