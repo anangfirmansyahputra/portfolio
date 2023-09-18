@@ -6,12 +6,21 @@ import Image from 'next/image';
 import { Button } from './ui/button';
 import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from './ui/card';
 import { Separator } from './ui/separator';
+import { useEffect, useState } from 'react';
 
 const Project = () => {
+	const [isLoading, setIsLoading] = useState(false);
+
 	const openInNewTab = (url: string) => {
 		const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
 		if (newWindow) newWindow.opener = null;
 	};
+
+	useEffect(() => {
+		setIsLoading(true);
+	}, []);
+
+	if (!isLoading) return null;
 
 	return (
 		<motion.section
@@ -43,7 +52,19 @@ const Project = () => {
 									</div>
 								)}
 								<CardTitle>{item.name}</CardTitle>
-								<CardDescription>{item.description}</CardDescription>
+								<CardDescription>
+									{/* <div className='grid gap-2 sm:grid-cols-3 md:grid-cols-1 lg:grid-cols-3'>
+										{item.using.map((using, index) => (
+											<div
+												key={index}
+												className='border-l-4 border-l-indigo-500 p-1 bg-secondary flex items-center justify-between'
+											>
+												{using}
+											</div>
+										))}
+									</div> */}
+									<div className='my-2'>{item.description}</div>
+								</CardDescription>
 							</CardHeader>
 							<CardFooter>
 								<Button

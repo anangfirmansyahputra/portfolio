@@ -3,6 +3,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import './globals.css';
+import { Toaster } from '@/components/ui/toaster';
 
 const font = Poppins({ subsets: ['latin'], weight: ['100', '300', '400', '500', '700', '900', '200', '600'] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				>
 					<Header />
 					<main className='h-[calc(100%_-_80px)] container'>{children}</main>
+					<Toaster />
 				</ThemeProvider>
 			</body>
 		</html>
