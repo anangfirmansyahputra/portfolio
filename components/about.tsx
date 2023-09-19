@@ -11,14 +11,14 @@ import { Separator } from './ui/separator';
 // bg-slate-50 dark:bg-transparent
 const About = () => {
 	const onDownload = () => {
-		const pdfUrl = '/assets/Anang Firmansyah.pdf';
+		const pdfUrl = '/assets/cv.pdf';
 		// Buat elemen anchor untuk menginisiasi unduhan
 		const a = document.createElement('a');
 		a.href = pdfUrl;
 		a.download = 'cv.pdf'; // Ganti dengan nama file yang sesuai
 		a.click();
-	}
-	
+	};
+
 	return (
 		<motion.section
 			initial={{ opacity: 0 }}
@@ -26,23 +26,16 @@ const About = () => {
 			transition={{ duration: 0.75, ease: 'easeOut' }}
 			exit={{ opacity: 0 }}
 			className='h-full 
-			dark:text-white'
-		>
+			dark:text-white'>
 			{/* <Container> */}
 			<div className=''>
 				<h1 className='text-3xl mt-2 sm:mt-3 md:mt-5 mb-3 sm:mb-5 md:mb-10 text-start leading-[1.1] md:text-6xl font-bold'>About</h1>
 				<Separator />
 				<div className='w-full flex flex-col-reverse sm:gap-5 mt-6'>
 					<div className='flex-1 pb-10'>
-						<Accordion
-							type='single'
-							collapsible
-						>
+						<Accordion type='single' collapsible>
 							{accordionItem.map((item) => (
-								<AccordionItem
-									key={item.value}
-									value={item.value}
-								>
+								<AccordionItem key={item.value} value={item.value}>
 									<AccordionTrigger>{item.title}</AccordionTrigger>
 									<AccordionContent className='text-muted-foreground'>{item.desc}</AccordionContent>
 								</AccordionItem>
@@ -61,13 +54,7 @@ const About = () => {
 					</div>
 					<div className='flex-1'>
 						<div className='relative mx-auto aspect-square rounded-full overflow-hidden sm:w-1/2 max-w-[300px] md:w-1/3 lg:w-1/4'>
-							<Image 
-								src="/assets/anang.JPG" 
-								fill 
-								alt='' 
-								priority
-								className='object-cover object-top'
-							/>
+							<Image src='/assets/anang.JPG' fill alt='' priority className='object-cover object-top' />
 						</div>
 						<div className='my-6 flex items-center justify-center gap-5'>
 							<Button variant='premium' onClick={onDownload}>
